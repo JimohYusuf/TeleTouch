@@ -1,0 +1,31 @@
+# python 3.x
+
+#server - linux
+sudo apt install python3-pip
+sudo pip3 install virtualenv
+virtualenv projectenv
+source projectenv/bin/activate
+pip install apscheduler
+pip install Flask gunicorn
+
+https://medium.com/faun/deploy-flask-app-with-nginx-using-gunicorn-7fda4f50066a
+
+
+
+
+
+sudo apt install authbind -y
+sudo touch /etc/authbind/byport/80
+sudo chmod 777 /etc/authbind/byport/80
+authbind --deep python app.py
+
+# client windows / mac (package with pyinstaller)
+
+sudo apt install python3-pip
+sudo pip3 install virtualenv
+virtualenv client
+source client/bin/activate
+pip3 install requests
+pip3 install pyserial
+pip3 install schedule
+python app.py
