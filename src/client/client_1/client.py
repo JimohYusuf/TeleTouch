@@ -1670,8 +1670,8 @@ def get_active_users():
     global MAX_GET_DELAY  
 
     try:
+        active_participants = ['Self']
         if sender:
-            active_participants = ['Self']
             _data = {'sender': str(sender), 'busy': BUSY, 'tag': "get_active"}
             with concurrent.futures.ThreadPoolExecutor() as executor:
                 response = executor.submit(
@@ -1969,7 +1969,7 @@ send_btn.grid(row=0, column=0, pady=pad_y, padx=pad_x)
 rt_self_btn.grid(row=2, column=0, pady=pad_y, padx=pad_x)
 create_actvty_btn.grid(row=3, column=0, pady=pad_y, padx=pad_x)
 port_btn.grid(row=4, column=0, pady=pad_y, padx=pad_x)
-#create_accnt_btn.grid(row=5, column=0, pady=pad_y, padx=pad_x)
+create_accnt_btn.grid(row=5, column=0, pady=pad_y, padx=pad_x)
 #server_addr_btn.grid(row=6, column=0, pady=pad_y, padx=pad_x)
 #status_btn.grid(row=7, column=0, pady=pad_y, padx=pad_x)
 
