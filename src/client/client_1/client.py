@@ -1966,7 +1966,7 @@ pad_y = 30 # with all buttons, set to 15
 
 send_btn.grid(row=0, column=0, pady=pad_y, padx=pad_x)
 #rt_btn.grid(row=1, column=0, pady=pad_y, padx=pad_x)
-#rt_self_btn.grid(row=2, column=0, pady=pad_y, padx=pad_x)
+rt_self_btn.grid(row=2, column=0, pady=pad_y, padx=pad_x)
 create_actvty_btn.grid(row=3, column=0, pady=pad_y, padx=pad_x)
 port_btn.grid(row=4, column=0, pady=pad_y, padx=pad_x)
 #create_accnt_btn.grid(row=5, column=0, pady=pad_y, padx=pad_x)
