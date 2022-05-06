@@ -595,7 +595,7 @@ def send_message():
         curs = conn.cursor()
 
         curs.execute(
-            "CREATE TABLE IF NOT EXISTS activity (activity_name text PRIMARY KEY, motors text, duration text)")
+            "CREATE TABLE IF NOT EXISTS activity (activity_name text PRIMARY KEY, motors text, duration text, intensity text)")
         curs.execute("SELECT *,oid FROM activity")
         data = curs.fetchall()
 
@@ -691,7 +691,7 @@ def delete_activity_gui():
         curs = conn.cursor()
 
         curs.execute(
-            "CREATE TABLE IF NOT EXISTS activity (activity_name text PRIMARY KEY, motors text, duration text)")
+            "CREATE TABLE IF NOT EXISTS activity (activity_name text PRIMARY KEY, motors text, duration text, intensity text)")
         curs.execute("SELECT *,oid FROM activity")
         data = curs.fetchall()
 
